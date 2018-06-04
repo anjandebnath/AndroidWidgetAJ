@@ -83,8 +83,8 @@ public class NewAppWidgetReceiver extends AppWidgetProvider {
         // There may be multiple widgets active, so update all of them
         for (int appWidgetId : appWidgetIds) {
             //updateSimpleWidget(context, appWidgetManager, appWidgetId);
-            updateBroadCastWidget(context, appWidgetManager, appWidgetId);
-            //updateConfigureWidget(context, appWidgetManager, appWidgetId);
+            //updateBroadCastWidget(context, appWidgetManager, appWidgetId);
+            updateConfigureWidget(context, appWidgetManager, appWidgetId);
             //updateServiceWidget(context, appWidgetManager, appWidgetId);
         }
     }

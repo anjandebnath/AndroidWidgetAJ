@@ -1,7 +1,7 @@
 #ACK
 
 
-##To view Simple Widget:
+##To view `Simple Widget`:
 - Go to MainActivity.java and try to find the comment
 ```
  /**
@@ -18,7 +18,7 @@
 
 
 
-##To view Broadcast Widget:
+##To view `Broadcast Widget`:
 - Go to MainActivity.java and try to find the comment
 ```
  /**
@@ -32,6 +32,27 @@
 - Now project is ready to show broadcast widget.
 - clicking on button on widget it will increment the int value and broadcast value to widget.
 - the logic for increment is written on `onReceive()`
+
+
+##To view `Configure Widget`:
+- Go to MainActivity.java and try to find the comment
+```
+ /**
+  * Configure Widget
+  */
+```
+- Then uncomment `setContentView(R.layout.activity_main);`
+- open `new_app_widget_info.xml` and find `android: configure` then add 
+`android:configure="com.example.user06.androidwidgetaj.ConfigurableWidgetConfigureActivity"`.
+- Go to `NewAppWidgetReceiver.java` and find `onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds)`
+- just uncomment `updateConfigureWidget(context, appWidgetManager, appWidgetId);`
+- Now project is ready to show simple widget.
+- clicking on button this will open a configure page.
+- simply add a url and add to widget.
+
+
+
+
 
 
 
