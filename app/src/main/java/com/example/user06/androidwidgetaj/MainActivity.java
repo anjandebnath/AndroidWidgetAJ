@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Simple Widget
          */
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         // N.B: to run this just open new_app_widget_info.xml
         // then find android: configure
         // remove that and run
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Broadcast Widget
          */
-        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
 
         /**
